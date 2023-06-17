@@ -3,10 +3,11 @@
 }
 
 @DEF_TEXT_COLOR: #eee;
+@PRIMARY_COLOR: #13131a;
 @SECONDARY_COLOR: #040408;
 
 body {
-    background: #08080f;
+    background: @PRIMARY_COLOR;
     color: @DEF_TEXT_COLOR;
     font-size: 20px;
     font-family: 'Fira Code', sans-serif;
@@ -49,11 +50,11 @@ h2 {
 }
 
 .section-1 {
-    background-color: #08080f;
+    background-color: @PRIMARY_COLOR;
 }
 
 .section-2 {
-    background-color: #040408;
+    background-color: @SECONDARY_COLOR;
 }
 
 .pb6r {
@@ -74,7 +75,7 @@ h2 {
     background-size: 100%;
     background-repeat: no-repeat;
     
-    background-color: #05050a;
+    background-color: @SECONDARY_COLOR;
     border-radius: 0.5rem;
     
     text-decoration: none;
