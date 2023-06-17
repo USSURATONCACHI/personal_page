@@ -61,6 +61,26 @@ h2 {
     padding-bottom: 6rem;
 }
 
+.pb2r {
+    padding-bottom: 2rem;
+}
+
+.pb1r {
+    padding-bottom: 1rem;
+}
+
+.taj {
+    text-align: justify;
+}
+
+.w100p {
+    width: 100%;
+}
+
+a {
+    color: #4af;
+}
+
 // ==== Tile ====
 
 .tile {
@@ -122,4 +142,49 @@ h2 {
 .footer {
     // background-color: #05050a;
     padding: 3rem 0rem;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    .contacts {
+        width: auto;
+        padding: 0;
+    }
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+// ==== Spoiler ====
+
+.spoiler {
+    z-index: 3;
+    position: relative;
+
+    &:hover .spoiler-content {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.spoiler-content {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s, visibility 0.2s;
+
+    position: absolute;
+    top: 0;
+    transform: translate(0, -100%);
+    box-shadow: 0 0 2rem 0rem #333;
+    border-radius: 0.5rem;
+
+    padding: 2rem;
+    width: 100%;
+    background-color: @PRIMARY_COLOR;
 }
