@@ -1,3 +1,5 @@
 node_modules
 dist
 gulpfile_old.js
+.DS_Store
+src/.DS_Store
