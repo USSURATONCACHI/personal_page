@@ -1,0 +1,124 @@
+* {
+    font-family: sans-serif;
+}
+
+@DEF_TEXT_COLOR: #eee;
+@SECONDARY_COLOR: #040408;
+
+body {
+    background: #08080f;
+    color: @DEF_TEXT_COLOR;
+    font-size: 20px;
+    font-family: 'Fira Code', sans-serif;
+    line-height: 1.4;
+}
+
+.header-link {
+    color: @DEF_TEXT_COLOR;
+    padding: 15px;
+    padding-left: 15px;
+    font-size: 1.35rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+.square {
+    height: 0;
+    position: relative;
+    padding-bottom: 100%;
+}
+
+h2 {
+    font-size: 2.8rem;
+    padding: 5rem 0rem 2rem 0rem;
+}
+
+.section-1 {
+    background-color: #08080f;
+}
+
+.section-2 {
+    background-color: #040408;
+}
+
+.pb6r {
+    padding-bottom: 6rem;
+}
+
+// ==== Tile ====
+
+.tile {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+    background-color: #05050a;
+    border-radius: 0.5rem;
+    
+    text-decoration: none;
+
+    overflow: hidden;
+}
+
+.tile-image {
+    width: 100%;
+    flex-grow: 1;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.tile-image .overlay {
+    background-color: #00000000;
+    transition: background-color 0.6s;
+    width: 100%;
+    height: 100%;
+}
+
+.tile-title {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+
+    color: @DEF_TEXT_COLOR;
+    transition: line-height 0.6s, color 0.3s 0.3s, padding 0.6s;
+}
+
+.tile:hover .tile-image .overlay {
+    background-color: #00000010;
+}
+
+.tile:hover .tile-title {
+    line-height: 0;
+    padding: 0;
+    color: transparent;
+    transition: line-height 0.6s, color 0.3s, padding 0.6s;
+}
+
+// ==== Footer ====
+
+.footer {
+    // background-color: #05050a;
+    padding: 3rem 0rem;
+}
