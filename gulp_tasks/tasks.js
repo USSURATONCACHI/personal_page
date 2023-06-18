@@ -26,6 +26,7 @@ const jsMinify = require('gulp-terser');
 function scripts(file, save_to, browser_sync) {
     src(file)
         .pipe(jsMinify())
+        .on('error', swallowError)
         .pipe(rename(path.basename(save_to)))
         .pipe(dest(path.dirname(save_to)))
         .pipe(browser_sync.stream());
