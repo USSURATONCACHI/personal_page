@@ -81,6 +81,29 @@ a {
     color: #4af;
 }
 
+.section-about-me {
+    position: relative;
+
+    * {
+        z-index: 1;
+    }
+}
+
+.section-about-me .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+
+    background: url('/images/night_photo.webp');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+}
+
 // ==== Tile ====
 
 .tile {
@@ -147,7 +170,7 @@ a {
 .footer-contacts {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
 
     .contacts {
         width: auto;
