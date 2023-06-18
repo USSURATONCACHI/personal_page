@@ -87,12 +87,37 @@
     transform: translate(-12.7rem, 11.2rem) rotate(30deg);
 }
 
+@keyframes dance {
+    from {
+        transform: translate(-1.9rem, -3.6rem) rotate(-17deg);
+    }
+
+    50% {
+        transform: translate(-1.8rem, -3.8rem) rotate(-16deg);
+    }
+
+    to {
+        transform: translate(-1.7rem, -3.6rem) rotate(-15deg);
+    }
+}
 
 #logo-rust {
     left: auto;
     right: 0;
     z-index: 2;
     transform: translate(-1.9rem, -3.6rem) rotate(-17deg);
+
+    animation-name: dance;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.4s;
+    animation-delay: 0.1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+
+    &:hover {
+        animation-play-state:running;
+    }
 }
 
 #logo-java {
