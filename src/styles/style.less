@@ -2,6 +2,10 @@
     font-family: sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 @DEF_TEXT_COLOR: #eee;
 @PRIMARY_COLOR: #13131a;
 @SECONDARY_COLOR: #040408;
@@ -12,6 +16,13 @@ body {
     font-size: 20px;
     font-family: 'Fira Code', sans-serif;
     line-height: 1.4;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
 }
 
 .header-link {
@@ -97,7 +108,7 @@ a {
     bottom: 0;
     z-index: 0;
 
-    background: url('/images/night_photo.webp');
+    background: url('../images/night_photo.webp');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -105,6 +116,10 @@ a {
 }
 
 // ==== Tile ====
+
+.tile-wrapper {
+    margin-bottom: 2rem;
+}
 
 .tile {
     position: absolute;
@@ -114,6 +129,7 @@ a {
     right: 0;
     bottom: 0;
     top: 0;
+
 
     background-size: 100%;
     background-repeat: no-repeat;
@@ -210,4 +226,29 @@ a {
     padding: 2rem;
     width: 100%;
     background-color: @PRIMARY_COLOR;
+}
+
+
+//pos-md
+@media (max-width: 991px) {
+}
+
+
+
+// pos-sm
+@media (max-width: 767px) {
+    .footer {
+        text-align: center;
+    }
+    .footer-contacts {
+        margin-top: 2rem;
+        align-items: center;
+    }
+}
+
+
+
+
+// pos-xs
+@media (max-width: 575px) {
 }

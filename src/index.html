@@ -5,20 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Page</title>
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/fonts.css">
-    <link rel="stylesheet" href="styles/aacg.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/about_me.css">
-    <link rel="stylesheet" href="styles/logos.css">
-    <link rel="stylesheet" href="styles/stack.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/fonts.css">
+    <link rel="stylesheet" href="../styles/aacg.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/about_me.css">
+    <link rel="stylesheet" href="../styles/logos.css">
+    <link rel="stylesheet" href="../styles/stack.css">
 </head>
 <body>
     <div class="section-1">
         <div class="container">
             <div class="row header">
-                <a href="/" class="pos-4 left header-link">Page</a>
-                <a href="/" class="pos-4 offset-4 header-link right">Page</a>
+                <a href="/" class="pos-4 left header-link">&lt;ussuratoncachi&gt;</a>
+                <ul class="contacts contacts-header">
+                    <li><a href="https://vk.com/d.redchin" class="logo-vk"></a></li>
+                    <li><a href="https://t.me/@ussuraton" class="logo-telegram"></a></li>
+                    <li><a href="https://github.com/USSURATONCACHI" class="logo-github"></a></li>
+                </ul>
             </div>
         </div>
     </div>
@@ -28,24 +32,23 @@
         <div class="container">
             <div class="row">
                 <div class="pos-12">
-                    <h2 style="font-size: 2.5rem;">Hello, this is me: </h2>
+                    <h2 style="font-size: 2.5rem;" id="about-me-header">Hello, this is me: </h2>
                 </div>
             </div>
             <div class="row">
-                <div class="pos-12">
+                <div class="pos-12 about-me-wrapper">
                     <div class="about-me">
-                        <div class="profile-info" style="align-items: right;">
-                            <h3 class="name">&lt;ussuratoncachi&gt;</h3>
-                            <ul class="contacts">
+                        <div class="profile-info">
+                            <h3 class="name" id="name-avatar">&lt;ussuratoncachi&gt;</h3>
+                            <ul class="contacts" id="contacts-avatar">
                                 <li><a href="https://vk.com/d.redchin" class="logo-vk"></a></li>
                                 <li><a href="https://t.me/@ussuraton" class="logo-telegram"></a></li>
                                 <li><a href="https://github.com/USSURATONCACHI" class="logo-github"></a></li>
                             </ul>
                         </div>
+                        
+                        <div class="avatar"><div class="square"></div></div>
     
-                        <div class="avatar">
-                            <div class="square"></div>
-                        </div>
                         <span id="typing-text">&lt;- yeah, this guy</span>
                     </div>
                 </div>
@@ -68,40 +71,47 @@
                 </div>
             </div>
             <div class="row">
-                <div class="pos-12">
-                    <div class="grid">
-                        <div class="square">
-                            <a href="/" class="tile">
-                                <div class="tile-image" style="background-image: url('images/astolfo.webp');">
-                                    <div class="overlay"></div>
-                                </div>
-                                <h2 class="tile-title">Astolfo</h2>
-                            </a>
-                        </div>
-                        <div class="square">
-                            <a href="/" class="tile">
-                                <div class="tile-image" style="background-image: url('images/astolfo.webp');">
-                                    <div class="overlay"></div>
-                                </div>
-                                <h2 class="tile-title">Ecosim</h2>
-                            </a>
-                        </div>
-                        <div class="square">
-                            <a href="/" class="tile">
-                                <div class="tile-image" style="background-image: url('images/astolfo.webp');">
-                                    <div class="overlay"></div>
-                                </div>
-                                <h2 class="tile-title">lotofcubes</h2>
-                            </a>
-                        </div>
-                        <div class="square">
-                            <a href="/" class="tile">
-                                <div class="tile-image" style="background-image: url('images/astolfo.webp');">
-                                    <div class="overlay"></div>
-                                </div>
-                                <h2 class="tile-title">sm-logic</h2>
-                            </a>
-                        </div>
+                <div class="pos-4 pos-md-6 pos-sm-12 tile-wrapper">
+                    <div class="square">
+                        <a href="/" class="tile">
+                            <div class="tile-image" style="background-image: url('images/astolfo.webp');">
+                                <div class="overlay"></div>
+                            </div>
+                            <h2 class="tile-title">Astolfo</h2>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="pos-4 pos-md-6 pos-sm-12 tile-wrapper">
+                    <div class="square">
+                        <a href="/" class="tile">
+                            <div class="tile-image" style="background-image: url('images/astolfo.webp');">
+                                <div class="overlay"></div>
+                            </div>
+                            <h2 class="tile-title">Ecosim</h2>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pos-4 pos-md-6 pos-sm-12 tile-wrapper">
+                    <div class="square">
+                        <a href="/" class="tile">
+                            <div class="tile-image" style="background-image: url('images/astolfo.webp');">
+                                <div class="overlay"></div>
+                            </div>
+                            <h2 class="tile-title">lotofcubes</h2>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pos-4 pos-md-6 pos-sm-12 tile-wrapper">
+                    <div class="square">
+                        <a href="/" class="tile">
+                            <div class="tile-image" style="background-image: url('images/astolfo.webp');">
+                                <div class="overlay"></div>
+                            </div>
+                            <h2 class="tile-title">sm-logic</h2>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -164,19 +174,19 @@
         <div class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="pos-6 footer-item">
+                    <div class="pos-6 pos-sm-12 pos-xs-12 footer-item">
                         <p class="pb1r">Personal page of &lt;ussuratoncachi&gt;</p>
-                        <div class="spoiler">
+                        <div class="spoiler" id="monday-trigger">
                             <span class="spoiler-text">Absolutely no secrets here 🙄</span>
                             <div class="spoiler-content" style="width: 30rem;">
                                 <p class="pb2r taj">
                                     This is my footer, i can put here whatever i want. 
                                     So, here is a silly cat:</p>
-                                <img src="images/silly_cat.webp" alt="Silly cat" class="w100p">
+                                <img id="monday" src="images/silly_cat.webp" alt="Silly cat" class="w100p">
                             </div>
                         </div>
                     </div>
-                    <div class="pos-6 footer-item footer-contacts ">
+                    <div class="pos-6 pos-sm-12 pos-xs-12 footer-item footer-contacts ">
                         <span class="pb1r">Contacts (again):</span>
                         <a href="mail://redchindaniil@gmail.com">redchindaniil@gmail.com</a>
                         <ul class="contacts">
@@ -190,8 +200,9 @@
         </div>
     </div>
 
-    <script src="/scripts/typing.js"></script>
-    <script src="/scripts/matrix-bg.js"></script>
+    <script src="../scripts/typing.js"></script>
+    <script src="../scripts/matrix-bg.js"></script>
+    <script src="../scripts/monday.js"></script>
 </body>
 </html>
 

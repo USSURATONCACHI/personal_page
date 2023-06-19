@@ -95,6 +95,7 @@ const phrases = [
     '<- 5d chess player',
     '<- rui kamishiro fan',
     '<- the codefather',
+    '<- monday left him broken',
 
     '<- pixel whisperer',
     '<- opengl enthusiast',

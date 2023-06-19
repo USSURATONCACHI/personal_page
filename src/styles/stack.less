@@ -30,7 +30,8 @@
 
     .stack-logos {
         right: auto;
-        left: 0;
+        left: 0rem;
+        width: 20rem;
     }
 }
 
@@ -55,11 +56,14 @@
     position: absolute;
     display: inline-block;
 
+    box-sizing: border-box;
     top: 0;
     right: 0;
     bottom: 0;
-    width: 20rem;
+    width: 27rem;
     height: 20rem;
+
+    //border: 2px solid red;
 }
 
 .stack-logo {
@@ -77,21 +81,21 @@
     left: auto;
     right: 0;
     z-index: 2;
-    transform: translate(0.5rem, 2.3rem) rotate(0deg);
+    transform: translate(-4rem, 2.3rem) rotate(0deg);
 }
 
 #logo-c {
     left: auto;
     right: 0;
     z-index: 2;
-    transform: translate(5rem, 10rem) rotate(0deg);
+    transform: translate(0.5rem, 10rem) rotate(0deg);
 }
 
 #logo-c_sharp {
     left: auto;
     right: 0;
     z-index: 2;
-    transform: translate(-3.8rem, 10rem) rotate(0deg);
+    transform: translate(-8.3rem, 10rem) rotate(0deg);
 }
 
 
@@ -99,20 +103,20 @@
     left: auto;
     right: 0;
     z-index: 1;
-    transform: translate(-12.7rem, 11.2rem) rotate(30deg);
+    transform: translate(-17.2rem, 11.2rem) rotate(30deg);
 }
 
 @keyframes dance {
     from {
-        transform: translate(-1.9rem, -3.6rem) rotate(-17deg);
+        transform: translate(-6.4rem, -3.6rem) rotate(-17deg);
     }
 
     50% {
-        transform: translate(-1.8rem, -3.8rem) rotate(-16deg);
+        transform: translate(-6.3rem, -3.8rem) rotate(-16deg);
     }
 
     to {
-        transform: translate(-1.7rem, -3.6rem) rotate(-15deg);
+        transform: translate(-6.2rem, -3.6rem) rotate(-15deg);
     }
 }
 
@@ -120,7 +124,7 @@
     left: auto;
     right: 0;
     z-index: 2;
-    transform: translate(-1.9rem, -3.6rem) rotate(-17deg);
+    transform: translate(-6.4rem, -3.6rem) rotate(-17deg);
 
     animation-name: dance;
     animation-timing-function: ease-in-out;
@@ -139,7 +143,7 @@
     left: auto;
     right: 0;
     z-index: 2;
-    transform: translate(-8.7rem, 1.6rem) rotate(-10deg);
+    transform: translate(-13.2rem, 1.6rem) rotate(-10deg);
 }
 
 #logo-js {
@@ -168,4 +172,143 @@
     left: 0;
     z-index: 3;
     transform: translate(9.6rem, 10rem) rotate(0deg);
+}
+
+// pos-md
+@media (max-width: 991px) {
+    .stack-wrapper {
+        padding-right: 20rem;
+    }
+
+    .stack-web-wrapper {
+        padding-right: 0;
+        padding-left: 20rem;
+
+        .stack-logos {
+            transform: scale(0.8) translate(-2rem);
+        }
+    }
+
+    .stack-logos {
+        width: 20rem;
+        transform: scale(0.8) translate(2rem);
+    }
+
+    .stack-info {
+        padding: 2rem 0rem;
+    }
+
+    #logo-python {
+        transform: translate(-4.3rem, 18.2rem) rotate(30deg);
+    }
+}
+
+
+// pos-sm
+@media (max-width: 767px) {
+    .stack-wrapper {
+        padding-right: 0;
+        padding-top: 18rem;
+        margin-top: 3rem;
+        height: auto;
+    }
+    .stack-logos {
+        bottom: auto;
+        width: auto;
+
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 15rem;
+
+        padding: 0;
+        margin: 0;
+
+        transform: none;
+
+        //border: 2px solid red;
+    }
+
+    .stack-web-wrapper {
+        padding-right: 0;
+        padding-left: 0rem;
+        padding-top: 13rem;
+
+        .stack-logos {
+            bottom: auto;
+            width: auto;
+    
+            top: 0;
+            right: 0;
+            left: 0;
+            height: 10rem;
+        
+            transform: none;
+        }
+    }
+
+
+    #logo-cpp {
+        transform: translate(-7rem, 0rem) rotate(0deg);
+    }
+
+    #logo-c {
+        transform: translate(-2.5rem, 7.7rem) rotate(0deg);
+    }
+
+    #logo-c_sharp {
+        transform: translate(-11.3rem, 7.7rem) rotate(0deg);
+    }
+
+    #logo-python {
+        transform: translate(-20.2rem, 8.9rem) rotate(30deg);
+    }
+    
+    #logo-rust {
+        transform: translate(-23.4rem, 3.3rem) rotate(-30deg);
+    }
+    
+    #logo-java {
+        transform: translate(-16.2rem, -0.7rem) rotate(-10deg);
+    }
+
+    @keyframes dance {
+        from {
+            transform: translate(-23.4rem, 3.3rem) rotate(-30deg);
+            //transform: translate(-6.4rem, -3.6rem) rotate(-17deg);
+        }
+    
+        50% {
+            transform: translate(-23.3rem, 3rem) rotate(-28deg);
+            //transform: translate(-6.3rem, -3.8rem) rotate(-16deg);
+        }
+    
+        to {
+            transform: translate(-23rem, 3rem) rotate(-26deg);
+            //transform: translate(-6.2rem, -3.6rem) rotate(-15deg);
+        }
+    }
+
+    #logo-html5 {
+        transform: translate(3rem, 0.15rem) rotate(-15deg);
+    }
+    
+    #logo-css {
+        transform: translate(11rem, 0.1rem) rotate(-5deg);
+    }
+
+    #logo-js {
+        transform: translate(20rem, 0rem) rotate(0deg);
+    }
+    
+    #logo-database {
+        display: none;
+    }
+}
+
+
+
+
+// pos-xs
+@media (max-width: 575px) {
 }
