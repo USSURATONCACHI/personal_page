@@ -1,1 +1,1 @@
-const monday=document.getElementById("monday");function updatePic(){const e=Math.random();monday.src=e<.002?"/images/monday.gif":e<.01?"/images/monday.webp":"/images/silly_cat.webp"}document.getElementById("monday-trigger").addEventListener("mouseenter",updatePic);
+const monday=document.getElementById("monday");function updatePic(){const e=Math.random();monday.src=e<.002?"../personal_page/images/monday.gif":e<.01?"../personal_page/images/monday.webp":"../personal_page/images/silly_cat.webp"}document.getElementById("monday-trigger").addEventListener("mouseenter",updatePic);
