@@ -112,6 +112,7 @@ const phrases = [
     ': may the source be with you',
     ': live, love, segfault',
     ': it\'s all simurgh plan',
+    ': in r_st we trust',
 
     '...mutable reference occurs here...',
     'once upon a time in the land of performance...',
