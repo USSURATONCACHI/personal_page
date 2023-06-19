@@ -68,6 +68,7 @@
 
 .stack-logo {
     position: absolute;
+    display: inline-block;
     top: 0;
     left: 0;
 
@@ -311,4 +312,87 @@
 
 // pos-xs
 @media (max-width: 575px) {
+    #typing-text {
+        font-size: 1.5rem;
+    }
+
+    .avatar {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .stack-logos {
+        left: 50%;
+        width: 25rem;
+        right: auto;
+        height: 20rem;
+        transform: translate(-50%, 0) scale(0.75);
+    }
+
+    #logo-python {
+        transform: translate(1.3rem, 1.5rem) rotate(-30deg);
+    }
+
+    #logo-cpp {
+        transform: translate(-8rem, 1rem) rotate(0deg);
+    }
+
+    #logo-c {
+        transform: translate(-3.5rem, 8.7rem) rotate(0deg);
+    }
+
+    #logo-c_sharp {
+        transform: translate(-12.3rem, 8.7rem) rotate(0deg);
+    }
+    
+    #logo-java {
+        transform: translate(-17.2rem, 0.3rem) rotate(-10deg);
+    }
+
+    #logo-rust {
+        transform: translate(-4rem, -5.7rem) rotate(7deg);
+    }
+
+    @keyframes dance {
+        from {
+            transform: translate(-4rem, -5.7rem) rotate(7deg);
+        }
+    
+        50% {
+            transform: translate(-3.8rem, -5.9rem) rotate(4deg);
+        }
+    
+        to {
+            transform: translate(-3.6rem, -5.7rem) rotate(1deg);
+        }
+    }
+    
+
+    .stack-web-wrapper {
+        padding-top: 16rem;
+
+        .stack-logos {
+            left: 50%;
+            width: 17rem;
+            right: auto;
+            height: 20rem;
+            transform: translate(-50%, 0) scale(0.75);
+        }
+    }
+
+    #logo-html5 {
+        transform: translate(0rem, 0.15rem) rotate(-15deg);
+    }
+    
+    #logo-css {
+        transform: translate(8rem, 0.1rem) rotate(-5deg);
+    }
+
+    #logo-js {
+        transform: translate(4rem, 10rem) rotate(0deg);
+    }
+    
+    #logo-database {
+        display: none;
+    }
 }
