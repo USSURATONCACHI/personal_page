@@ -1,0 +1,1 @@
+const monday=document.getElementById("monday");function updatePic(){const e=Math.random();monday.src=e<.002?"/images/monday.gif":e<.01?"/images/monday.webp":"/images/silly_cat.webp"}document.getElementById("monday-trigger").addEventListener("mouseenter",updatePic);
