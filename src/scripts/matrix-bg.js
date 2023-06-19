@@ -38,7 +38,7 @@ function drawStuff() {
         columns.push(randInt(rowsCount));
 
     for (let i = 0; i < colsCount; i++) {
-        let dist2 = Math.pow(i - centerCol, 2) + Math.pow(columns[i] - centerRow, 2);
+        let dist2 = Math.pow(i - centerCol, 2) + Math.pow(Math.pow(columns[i] - centerRow, 2), 1.2);
         let opacity = 255 / dist2;
 
         let letter = chars[randInt(chars.length)];
